@@ -16,7 +16,7 @@ MARGIN=1in
 # Start Makefile ###############################################################
 CC     = pandoc
 PDFS   = $(patsubst %.md,%.md.pdf,$(wildcard *.md))
-FLAGS  = -V geometry:margin=$(MARGIN) --number-sections
+FLAGS  = -V geometry:margin=$(MARGIN) #--number-sections
 VIEWER = evince
 
 all: clean $(PDFS)
